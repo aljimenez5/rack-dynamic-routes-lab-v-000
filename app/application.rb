@@ -9,13 +9,12 @@ class Application
       @@items.find do |item| 
         if item.name == item_req
           resp.write item.price
-        end
+      else 
+        resp.status = 404
+        resp.write "Route not found"
       end
-    else 
-      resp.status = 404
-      resp.write "Route not found"
+      resp.finish
     end
-    resp.finish
   end
   
   
