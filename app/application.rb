@@ -8,6 +8,8 @@ class Application
       item_req = req.path.split("/items/").last
       item = @@items.find {|item| item.name == item_req}
       item.price
+    else 
+      req.error
     
     
   end
