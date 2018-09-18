@@ -9,7 +9,7 @@ class Application
       item = @@items.find {|item| item.name == item_req}
       item.price
     else 
-      req.error
+      resp.status = 400
     
     
   end
