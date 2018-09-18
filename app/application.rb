@@ -10,6 +10,7 @@ class Application
         if item.name == item_req
           resp.write item_found.price
         end
+      end
     else 
       resp.status = 404
       resp.write "Route not found"
