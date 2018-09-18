@@ -6,7 +6,7 @@ class Application
     
     if req.path.match(/items/)
       item = req.path.split("/items/").last
-      price = @@item.?(item)
+      price = @@item.find {|item| (item)
     
     
   end
