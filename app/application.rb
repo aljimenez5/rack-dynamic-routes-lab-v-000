@@ -9,6 +9,9 @@ class Application
       @@items.find do |item| 
         if item.name == item_req
           resp.write item.price
+        else
+          resp.status = 400
+          resp.write "Item not found"
         end
       end
     else 
