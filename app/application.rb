@@ -10,6 +10,7 @@ class Application
       item.price
     else 
       resp.status = 400
+    end
     
     
   end
