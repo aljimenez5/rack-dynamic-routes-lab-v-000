@@ -8,7 +8,7 @@ class Application
       item_req = req.path.split('/items/').last
       @@items.find do |item| 
         if item.name == item_req
-          resp.write item_found.price
+          resp.write item.price
         end
       end
     else 
