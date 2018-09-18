@@ -11,7 +11,8 @@ class Application
     else 
       resp.status = 400
     end
-    resp.
-    
+    resp.finish
   end
+  
+  
 end
